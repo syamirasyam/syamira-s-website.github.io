@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body background="gif5.gif">
+        <div class="dropdown">
+            <div id="dropdownMenu" class="dropdown-content">
+                <h1 class="logo">bumble</syam>syam</span></h1>
+        
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutme.html">About Me<i class="fas fa-heart"></i></a>
+                    <ul class="dropdown"> 
+                     <li><a href="aboutme.html">Biodata</a> </li>
+                     <li><a href="aboutme.html">Hobby</a> </li>
+                     <li><a href="aboutme.html">Favourites</a> </li>
+                    </ul>
+                </li>
+        
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+    </body>
+    
+    <title>Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+
+body{
+    font-family: "lucida handwriting";
+}
+
+ul {
+   background: none;
+}
+
+ul li {
+  
+      display: inline-block;
+      position: relative;
+      
+}
+
+ul li a {
+   
+      display: block;
+      padding: 20px 25px ;
+      color:#4a43aa;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-family: arial;
+      
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: skyblue;
+    position: absolute;
+    display: none;
+    border-radius: border ;
+}
+
+ul li a:hover {
+    background: linear-gradient(#000021, darkblue);
+    color: lightblue;
+    transform: scaleX(1.3); 
+    padding: 25px 30px; 
+    border-radius: 10px;
+    
+    display: block;
+}
+
+
+ul li :hover {
+    display: block ;
+}
+
+
+ul li:hover .dropdown {
+display:block;
+
+}
+       
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(dodgerblue, mediumturquoise, skyblue);
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-radius: 5px;
+            
+        }
+
+        .logo {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: darkblue;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(54, 64, 156);
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(75, 135, 212);
+            
+        }
+
+        
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 40px;
+            background: skyblue;
+            list-style: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: -10px;
+        }
+
+        nav ul li ul li a {
+            color: rgb(54, 64, 156);
+            padding: 5px 10px;
+            display: block;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+       
+        .container {
+            margin-top: 30px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+            size: 300px;
+        }
+
+        .container .card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background: #7bc8db;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .container .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .container .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .container .card h2 {
+            margin: 15px 0 5px;
+        }
+        
+        .intro {
+    margin-top: 100px; 
+    text-align: center; 
+    background: #132557; 
+    padding: 50px 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(241, 214, 214, 0.1); 
+    border: 15px solid #61bbd6;
+}
+
+.intro h2 {
+    font-size: 25px;
+    color: #61bbd6;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+.outro {
+    margin-top:   50px;
+    text-align: center; 
+    background: #164191;
+    padding: 10px 10px; 
+    border: 18px solid #091244;
+}
+    
+.outro h1 {
+    font-size: 25px;
+    color: #61bbd6;
+    margin-bottom: 20px;
+}
+
+.intra {
+    margin-top: 50px; 
+    text-align: center;
+    background: #132557; 
+    padding: 30px 20px; 
+    border-radius: 0px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 5px solid #61bbd6; 
+    width: 100%; 
+    box-sizing: border-box; /
+}
+
+.intra h3 {
+    font-size: 28px;
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+.mytro {
+    margin-top: 100px; 
+    text-align: center; 
+    background: #132557; 
+    padding: 50px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(241, 214, 214, 0.1); 
+    border: 15px solid #61bbd6;
+}
+
+.mytro h1 {
+    font-size: 25px;
+    color: #61bbd6;
+    margin-bottom: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+   <body>
+    <header>
+        <a href="#" class="logo">Bumble<span>Syam</span></a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="aboutme.html">About Me <i class="fas fa-heart"></i></a>
+                    <ul>
+                        <li><a href="#">Biodata</a></li>
+                        <li><a href="#">Hobby</a></li>
+                        <li><a href="#">Favourites</a></li>
+                    </ul>
+                </li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   </body>
+    <section>
+        <div h2 class="education-page">EDUCATION</h2></div>
+      </section>
+
+
+
+    
+     <section class="intro">
+        <h2>────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────</h2>
+        <h2>⋆.˚✮🎧✮˚.⋆Welcome to My Education Page⋆.˚✮🎧✮˚.⋆</h2>
+        <h2>────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────</h2>
+    </section>
+
+    <section class="outro">
+        <h1>🌸˚˖𓍢ִ໋🌷͙֒✧🩷˚⋆PRIMARY SCHOOL🌸˚˖𓍢ִ໋🌷͙֒✧🩷˚⋆</h1>
+        <p> <b h2>SEKOLAH KEBANGSAAN JASIN [2011 - 2016]<h2></p></b>
+    </section>
+
+    
+    <div class="container">
+        <div class="card">
+            <img src="skj2.jpg" alt="School Logo" width="200">
+            <h2>School's Logo</h2>
+        </div>
+        <div class="card">
+            <img src="skj3.jpg" alt="School Logo" width="200">
+            <h2>School's Building</h2>
+           
+        </div>
+        <div class="card">
+            <img src="skj1.jpg" alt="School Logo" width="200">
+            <h2>Students</h2>
+           
+        </div>
+       
+        
+        <section class="intra">
+           <h3>🐬˚˖𓍢ִ໋ 🐋✧˚.🐟⋆SECONDARY SCHOOL🐬˚˖𓍢ִ໋ 🐋✧˚.🐟⋆</h3>
+        <p> <b h3>SEKOLAH MENENGAH KEBANGSAAN AGAMA TUN PERAK[2017 - 2021]<h3></p></b>
+       </section>
+
+       <div class="container">
+        <div class="card">
+            <img src="stp1.jpg" alt="School Logo" width="200">
+            <h2>School's Logo</h2>
+           
+        </div>
+        <div class="card">
+            <img src="stp2.jpg" alt="School Logo" width="200">
+            <h2>School's Building</h2>
+          
+        </div>
+        <div class="card">
+            <img src="stp3.jpg" alt="School Logo" width="200">
+            <h2>Students</h2>
+            
+        </div>
+
+        <section class="mytro">
+            <h1>ִֶָ𓂃 ࣪˖ ִֶָ🐇་༘࿐UNIVERSITYִֶָ𓂃 ࣪˖ ִֶָ🐇་༘࿐</h1>
+         <p> <b h1>UiTM JOHOR KAMPUS SEGAMAT[current]<h1></p></b>
+        </section>
+
+        <div class="container">
+            <div class="card">
+                <img src="uitm1.png" alt="School Logo" width="200">
+                <h2>School's Logo</h2>
+        
+            </div>
+            <div class="card">
+                <img src="uitm2.jpg" alt="School Logo" width="200">
+                <h2>School's Building</h2>
+                
+           
+                
+            </div>
+
+    </div>
+</body>
+</html>

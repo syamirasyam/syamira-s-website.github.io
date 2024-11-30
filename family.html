@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Family</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('gif5.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        ul {
+            background: none;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a {
+            display: block;
+            padding: 20px 25px ;
+            color:#4a43aa;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            font-family: arial;
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+        }
+
+        ul li ul.dropdown {
+            width: 90%;
+            background: skyblue;
+            position: absolute;
+            display: none;
+            border-radius: border ;
+        }
+
+        ul li a:hover {
+            background: linear-gradient( #000021, darkblue);
+            color: lightblue;
+            transform: scaleX(1.3);
+        }
+
+        ul li :hover {
+            display: block ;
+        }
+
+        ul li:hover .dropdown {
+            display:block;
+        }
+
+        header {
+            position: fixed;
+            top: 0; left: 0%; right: 0%;
+            background: linear-gradient(dodgerblue, mediumturquoise, skyblue);
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 900;
+            border-radius: 10px;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            font-style: italic;
+            color: white;
+        }
+
+        .logo span {
+            color: darkblue;
+        }
+        .card-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; 
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card-container {
+            perspective: 1000px;
+            margin-top: 200px;
+        }
+
+        .flip-card {
+            width: 300px;
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .card-container:hover .flip-card {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-front {
+            background: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .card-front img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card-back {
+            background: #0b3c3f;
+            color: white;
+            transform: rotateY(180deg);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 90%;
+            margin: 40px auto; 
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .slider-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .slider-controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .slider-controls button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+       
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="dropdown">
+            <div id="dropdownMenu" class="dropdown-content">
+                <h1 class="logo">bumble</syam>syam</span></h1>
+        
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutme.html">About Me<i class="fas fa-heart"></i></a>
+                    <ul class="dropdown"> 
+                     <li><a href="aboutme.html">Biodata</a> </li>
+                     <li><a href="aboutme.html">Hobby</a> </li>
+                     <li><a href="aboutme.html">Favourites</a> </li>
+                    </ul>
+                </li>
+        
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="card-section">
+        <div class="card-container">
+            <div class="flip-card">
+                <div class="card-front">
+                    <img src="p3.jpg" alt="Internship">
+                </div>
+                <div class="card-back">
+                    <h1>FAMILY</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="flip-card">
+                <div class="card-front">
+                    <img src="p5.jpg" alt="Concert">
+                </div>
+                <div class="card-back">
+                    <h1>COUSINS</h1>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="flip-card">
+                <div class="card-front">
+                    <img src="p4.jpg" alt="Part Time">
+                </div>
+                <div class="card-back">
+                    <h1>FAMILY</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider" id="imageSlider">
+            <img src="p6.jpg" alt="Image 1" >
+            <img src="p7.jpg" alt="Image 2">
+            <img src="p3.jpg" alt="Image 3">
+            <img src="p4.jpg" alt="Image 4">
+            <img src="p5.jpg" alt="Image 5">
+        </div>
+        <div class="slider-controls">
+            <button onclick="prevSlide()">❮</button>
+            <button onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slider = document.getElementById('imageSlider');
+            const slides = slider.children;
+            const totalSlides = slides.length;
+
+           
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+
+           
+            const offset = -currentSlide * 100;
+            slider.style.transform = `translateX(${offset}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    </script>
+
+</body>
+</html>
